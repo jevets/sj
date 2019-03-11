@@ -5,6 +5,7 @@ module.exports = function (config) {
   }
 
   config.addPassthroughCopy('src/img')
+  config.addPassthroughCopy('src/_redirects')
 
   return config
 }
