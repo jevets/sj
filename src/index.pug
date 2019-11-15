@@ -3,10 +3,11 @@ extends /layouts/base.pug
 block main
   .flex.flex-col.justify-center.items-center.h-screen.bg-grey-lightest.p-4
     div
-      img.w-32.rounded-full(
-        src="/img/steve-jamesson.png"
-        alt=site.author
-      )
+      a.h-card(href=site.url)
+        img.w-32.rounded-full(
+          src="/img/steve-jamesson.png"
+          alt=site.author
+        )
     h1.text-4xl.leading-tight= site.author
     h2.font-light= site.tagline
     .my-4.mt-8.text-grey-dark
